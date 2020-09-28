@@ -39,7 +39,7 @@ function Install-PowerShellModule {
 Install-Chocolatey
 
 Install-FromChocolatey 'git'
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/aaronpowell/system-init/master/common/.gitconfig' -OutFile (Join-Path $env:USERPROFILE '.gitconfig')
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/jim-pickering/system-init/master/common/.gitconfig' -OutFile (Join-Path $env:USERPROFILE '.gitconfig')
 
 Install-FromChocolatey 'vscode-insiders'
 Install-FromChocolatey 'dotnetcore-sdk'
@@ -47,7 +47,7 @@ Install-FromChocolatey 'microsoft-windows-terminal'
 Install-FromChocolatey 'fiddler'
 Install-FromChocolatey 'postman'
 Install-FromChocolatey 'linqpad'
-Install-FromChocolatey 'firefox'
+Install-FromChocolatey 'firefox-dev'
 Install-FromChocolatey 'googlechrome'
 Install-FromChocolatey 'powershell-core'
 
@@ -59,4 +59,4 @@ Install-PowerShellModule 'nvm' {
     Set-NodeVersion -Persist User latest
 }
 
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/aaronpowell/system-init/master/windows/Microsoft.PowerShell_profile.ps1' -OutFile $PROFILE
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/jim-pickering/system-init/master/windows/Microsoft.PowerShell_profile.ps1' -OutFile $PROFILE
