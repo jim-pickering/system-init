@@ -37,7 +37,7 @@ install_shell() {
 install_dotfiles() {
     echo -e '\e[0;33mSetting up standard dotfiles\e[0m'
 
-    git clone https://github.com/aaronpowell/system-init ~/code/github/system-init
+    git clone https://github.com/jim-pickering/system-init ~/code/github/system-init
 
     LINUX_SCRIPTS_DIR="$( cd "$( dirname "$0" )" >/dev/null 2>&1 && pwd )"
 
