@@ -47,7 +47,7 @@ Install-FromChocolatey 'microsoft-windows-terminal'
 Install-FromChocolatey 'fiddler'
 Install-FromChocolatey 'postman'
 Install-FromChocolatey 'linqpad'
-Install-FromChocolatey 'firefox-dev'
+Install-FromChocolatey 'firefox-dev --pre '
 Install-FromChocolatey 'googlechrome'
 Install-FromChocolatey 'powershell-core'
 
